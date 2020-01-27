@@ -1,4 +1,7 @@
-(in-package :lem)
+;; -*- mode:lisp -*-
+
+(in-package :lem-user)
+
 (define-command my/other-window-1 () ()
   (other-window -1))
 
@@ -17,7 +20,6 @@
 
 (in-package :lem.completion-mode)
 (define-key *completion-mode-keymap* "Tab" 'completion-select)
-
 
 (in-package :lem-paredit-mode)
 (define-key *paredit-mode-keymap* "ȣ" 'paredit-barf)
